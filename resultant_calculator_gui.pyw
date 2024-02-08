@@ -5,8 +5,8 @@ import tkinter.messagebox
 from math import sin, cos, radians, sqrt, atan, degrees
 main = tk.Tk()
 main.resizable(0, 0)
-imgicon = tk.PhotoImage(file=os.path.join('c:\\users\\user\\pycharmprojects\\app_store', 'casio_icon.png'))
-main.tk.call('wm', 'iconphoto', main._w, imgicon)
+# imgicon = tk.PhotoImage(file=os.path.join('c:\\users\\user\\pycharmprojects\\app_store', 'casio_icon.png'))
+# main.tk.call('wm', 'iconphoto', main._w, imgicon)
 main.title('Resultant Calculator')
 main.config(bg='sky blue')
 frame1 = tk.Frame(main)
@@ -41,7 +41,7 @@ def resultant():
                 return 0
             pic_window.withdraw()
             pic_window2 = tk.Toplevel(main, takefocus=True, bg='dark turquoise')
-            pic_window2.tk.call('wm', 'iconphoto', pic_window2._w, imgicon)
+            # pic_window2.tk.call('wm', 'iconphoto', pic_window2._w, imgicon)
             pic_window2.geometry('600x550+300+81')
             pic_window2.resizable(0, 0)
             can2 = tk.Canvas(pic_window2, width=600, height=500, bg='dark turquoise')
@@ -119,7 +119,7 @@ def resultant():
 
         main.withdraw()
         pic_window = tk.Toplevel(main, takefocus=True, bg='dark turquoise')
-        pic_window.tk.call('wm', 'iconphoto', pic_window._w, imgicon)
+        # pic_window.tk.call('wm', 'iconphoto', pic_window._w, imgicon)
         pic_window.geometry('650x590+325+81')
         pic_window.resizable(0,0)
         can = tk.Canvas(pic_window, height=500, width=600, bg='dark turquoise', bd=0)
